@@ -8,7 +8,7 @@ from datetime import datetime, timedelta
 
 
 def main():
-    defaultUrl = "http://192.168.7.194:8080/rest/v1/policyBXB/apply/download"
+    defaultUrl = "http://store-pre.91baofeng.com/rest/v1/policyBXB/apply/download"
     url = raw_input("Please enter download url (default: %s):" % defaultUrl) or defaultUrl
     yesterday = (datetime.now() - timedelta(days=1)).strftime('%Y-%m-%d')
     begin = raw_input("Please enter begin search date (default: %s):" % yesterday) or yesterday
